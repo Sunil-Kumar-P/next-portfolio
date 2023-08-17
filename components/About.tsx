@@ -16,7 +16,7 @@ const About = () => {
           <div className="justify-center">
             <h2 className="text-3xl font-bold justify-center">Sunil Kumar P</h2>
             <p className="text-gray-600">
-              Determined and hardworking person looking for a challenging job
+              Determined and hardworking person+++ looking for a challenging job
               within a rapidly growing organization where I can implement my
               technical skills and theoretical knowledge in a real-time
               approaching situation which can benefit me as an individual and my
