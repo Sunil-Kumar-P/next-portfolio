@@ -4,16 +4,15 @@ const CoCurricular = () => {
       <div className="container">
         <h2 className="text-2xl font-bold">Co-curricular Activities</h2>
         <ul className="list-disc list-inside">
-          <b>Certifications:</b>
-
+          <h3>Certifications:</h3>
           <ul className="list-disc list-inside">
             <li>
-              Certified on the topic "Modern PHP Web Development With MySQL,
-              Github and Heroku" by Udemy.
+              Certified on the topic &ldquo;Modern PHP Web Development With
+              MySQL, Github and Heroku&rdquo; by Udemy.
             </li>
             <li>
-              Certified on the topic "SQL Masterclass: SQL for Data Analytics"
-              by Udemy.
+              Certified on the topic &ldquo;SQL Masterclass: SQL for Data
+              Analytics&rdquo; by Udemy.
             </li>
           </ul>
 
