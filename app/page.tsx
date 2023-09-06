@@ -15,13 +15,21 @@ const Home = () => {
       <Header />
       <main>
         <About />
+        <hr />
         <Education />
+        <hr />
         <Skills />
+        <hr />
         <Projects />
+        <hr />
         <Internships />
+        <hr />
         <CoCurricular />
+        <hr />
         <Awards />
+        <hr />
         <PersonalDetails />
+        <hr />
       </main>
       <Footer />
     </div>

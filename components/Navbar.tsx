@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 const Navbar = () => {
   return (
-    <nav className="bg-gradient-to-r from-blue-500 to-purple-500 p-4">
+    <nav className="bg-gradient-to-r from-blue-500 to-purple-500 p-4 sticky top-0 z-10 flex items-center p-4">
       <div className="flex items-center p-4">
         <Button variant="ghost" size="icon" className="md:hidden">
           <Menu />

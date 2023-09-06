@@ -4,8 +4,8 @@ const About = () => {
   return (
     <section id="about" className="py-5">
       <div className="container">
-        <div className="flex flex-auto items-center justify-center space-x-4 mb-5">
-          <div className="relative w-48 h-48 mr-5 p-0 m-0">
+        <div className="flex flex-auto items-center justify-center space-x-4 ">
+          <div className="relative w-64 h-48">
             <Image
               src="/myImage.jpg"
               alt="Sunil Kumar P"
@@ -27,14 +27,14 @@ const About = () => {
         <div className="grid grid-cols-2 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-2">Address</h3>
-            <p>#95/A, 2nd Main, 2nd Cross, Near Aaxis Hospital,</p>
-            <p>Belthur, Kadugodi Post, Bengaluru-560067</p>
+            <p className="p-4">#95/A, 2nd Main, 2nd Cross, Near Aaxis Hospital, Belthur, Kadugodi Post, Bengaluru-560067</p>
+           
             <h3 className="text-xl font-bold mt-4 mb-2">Email ID</h3>
-            <p>cse.1cr21cs414.sunilkumarp@gmail.com</p>
+            <p className="p-4">cse.1cr21cs414.sunilkumarp@gmail.com</p>
             <h3 className="text-xl font-bold mt-4 mb-2">Mobile No</h3>
-            <p>+91 9964297599</p>
+            <p className="p-4">+91 9964297599</p>
             <h3 className="text-xl font-bold mt-4 mb-2">Github</h3>
-            <p>
+            <p className="p-4">
               <a
                 href="https://github.com/Sunil-Kumar-P"
                 target="_blank"
