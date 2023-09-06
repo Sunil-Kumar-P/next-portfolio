@@ -12,7 +12,7 @@ const Awards = () => {
             Awarded as Best Mini Project for Title "Game development using body gestures" in 5th Semester.
           </li>
           <li>
-            Awarded as Best Mini Project for Title "FREEBE" in 4th Semester.
+            Awarded as Best Mini Project for Title  &quot;FREEBE &quot; in 4th Semester.
           </li>
         </ul>
       </div>
