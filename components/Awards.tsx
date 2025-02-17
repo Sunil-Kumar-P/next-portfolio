@@ -1,4 +1,3 @@
-
 const Awards = () => {
   return (
     <section id="achievements" className="py-5">
@@ -9,10 +8,10 @@ const Awards = () => {
             Won Track prize of Rs.5000 in Game development at NMIT HACKS 2023 (National Level Hackathon).
           </li>
           <li>
-            Awarded as Best Mini Project for Title "Game development using body gestures" in 5th Semester.
+            Awarded as Best Mini Project for Title &quot;Game development using body gestures&quot; in 5th Semester.
           </li>
           <li>
-            Awarded as Best Mini Project for Title  &quot;FREEBE &quot; in 4th Semester.
+            Awarded as Best Mini Project for Title &quot;FREEBE&quot; in 4th Semester.
           </li>
         </ul>
       </div>
