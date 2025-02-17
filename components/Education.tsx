@@ -7,7 +7,7 @@ const Education = () => {
           <div>
             <h5 className="text-lg font-bold">Bachelor of Engineering – Computer Science and Engineering</h5>
             <p>CMR Institute of Technology, Bengaluru</p>
-            <p>7.25, 2024 (Pursuing)</p>
+            <p>7.59, 2024 (Pursuing)</p>
           </div>
           <div>
             <h5 className="text-lg font-bold">Diploma – Computer Science And Engineering</h5>
