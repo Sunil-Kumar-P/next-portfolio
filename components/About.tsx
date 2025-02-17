@@ -30,9 +30,9 @@ const About = () => {
             <p className="p-4">#95/A, 2nd Main, 2nd Cross, Near Aaxis Hospital, Belthur, Kadugodi Post, Bengaluru-560067</p>
            
             <h3 className="text-xl font-bold mt-4 mb-2">Email ID</h3>
-            <p className="p-4">cse.1cr21cs414.sunilkumarp@gmail.com</p>
+            <p className="p-4"></p>
             <h3 className="text-xl font-bold mt-4 mb-2">Mobile No</h3>
-            <p className="p-4">+91 9964297599</p>
+            <p className="p-4">+91</p>
             <h3 className="text-xl font-bold mt-4 mb-2">Github</h3>
             <p className="p-4">
               <a
