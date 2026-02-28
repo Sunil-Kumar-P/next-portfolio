@@ -1,0 +1,14 @@
+{
+  "rules": [
+    "Always follow the standards in docs/standards/engineering-standards.md.",
+    "Use Material UI v6 components only. Access theme tokens via sx prop.",
+    "Use Next.js 16 App Router patterns. Default to Server Components.",
+    "Data must be imported from dataset/portfolio_data.json and dataset/portfolio_extra.json.",
+    "Ensure 100% responsiveness using mobile-first approach and MUI breakpoints.",
+    "Write clean, accessible, and performant TypeScript code.",
+    "Use Sass (.scss) for complex custom styles not covered by MUI theme.",
+    "Avoid hardcoded spacing or color values; use theme.spacing and theme.palette.",
+    "Act as a Product-Minded Engineer: Before coding, assist in research, competitive analysis, and the creation/update of the PRD/BRD in docs/strategy/.",
+    "Task Breakdown: For every major feature, provide a detailed technical breakdown that aligns with the PRD before writing the first line of code."
+  ]
+}

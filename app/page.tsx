@@ -1,39 +1,25 @@
-import Header from "@/components/Header";
-import About from "@/components/About";
-import Education from "@/components/Education";
-import Skills from "@/components/Skills";
-import Footer from "@/components/Footer";
-import Projects from "@/components/Projects";
-import Internships from "@/components/Internship";
-import CoCurricular from "@/components/CoCurricular";
-import Awards from "@/components/Awards";
-import PersonalDetails from "@/components/PersonalDetails";
+'use client';
 
-const Home = () => {
+import React from 'react';
+import GhostNav from '@/components/ui/GhostNav';
+import HeroSection from '@/components/sections/HeroSection';
+import CraftSection from '@/components/sections/CraftSection';
+import ProofSection from '@/components/sections/ProofSection';
+import DialogueSection from '@/components/sections/DialogueSection';
+import portfolioData from '@/dataset/portfolio_data.json';
+
+export default function Home() {
   return (
-    <div>
-      <Header />
-      <main>
-        <About />
-        <hr />
-        <Education />
-        <hr />
-        <Skills />
-        <hr />
-        <Projects />
-        <hr />
-        <Internships />
-        <hr />
-        <CoCurricular />
-        <hr />
-        <Awards />
-        <hr />
-        <PersonalDetails />
-        <hr />
+    <>
+      <GhostNav />
+      <main className="page-container">
+        <div className="story-column">
+          <HeroSection />
+          <CraftSection />
+          <ProofSection projects={portfolioData.projects} />
+          <DialogueSection />
+        </div>
       </main>
-      <Footer />
-    </div>
+    </>
   );
-};
-
-export default Home;
+}

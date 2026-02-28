@@ -1,0 +1,58 @@
+/* Global Resets and Deep Obsidian Base */
+
+:root {
+  --background-dark: #0F1115;
+  --text-primary: #E2E8F0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-dark);
+  color: var(--text-primary);
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Base styling for layout grid */
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.story-column {
+  width: 100%;
+  max-width: 800px;
+  /* Center-focused single column storytelling */
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+/* 
+  Project Rows Hover Effect (The CSS :has Strategy)
+  Dim and grayscale all non-hovered project rows when hovering the parent section.
+*/
+section#projects:has(.project-row:hover) .project-row:not(:hover) {
+  opacity: 0.5;
+  filter: grayscale(80%);
+  transition: all 0.3s ease;
+}
