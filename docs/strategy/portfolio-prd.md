@@ -21,35 +21,54 @@ To achieve the premium feel of Himanshu's portfolio while maintaining Brittany C
   - *Headings*: **Outfit** or **Plus Jakarta Sans** (Modern, geometric, confident).
   - *Body*: **Inter** (The industry standard for perfect legibility).
   - *Monospace (Code/Tags)*: **Fira Code** or **JetBrains Mono**.
+- **The Chess Motif**: We will subtly weave the chess theme into the UI. For example, instead of a standard loading spinner or generic bullet points, we might use minimalist SVG outlines of chess pieces (like a Knight or King). The active state of the "Ghost Nav" might be a subtle checkerboard hover effect or a pawn moving forward.
 
 ## 4. The Flow & Wireframe Structure
-We will avoid the "generic template" by using an asymmetrical, sticky-scroll architecture.
+We are abandoning the traditional "portfolio template" (sidebar + content) in favor of a fluid, story-driven scroll experience. The goal is to make the reviewer feel a personal connection.
 
-### Global Layout
-- **Container**: Max-width capped at `1200px` to keep line lengths readable.
-- **Desktop Grid**: 40% Left / 60% Right split.
-  - *Left (Sticky)*: Hero pitch, Navigation links (that highlight on scroll), Social links. It stays fixed as the user scrolls.
-  - *Right (Scrollable)*: The content (Experience, Projects, Skills).
-- **Mobile Grid**: Single column. Left section becomes the top header; Right section scrolls normally below it.
+### Global Layout & Navigation
+- **Menu Strategy (The "Ghost" Nav)**: There is NO permanent navigation menu on the screen. The screen is dedicated 100% to the story. When the user scrolls up, or hovers near the top edge, a minimalist menu slowly and softly glows into existence. When they scroll down or move away, it dims and disappears.
+- **Scroll Architecture**: A single, beautifully paced vertical column.
 
-### Section-by-Section Components
-1. **Hero (Left Sticky Nav)**: Large typography for Name. A dynamic, typed, or staggered-fade-in Role description. Minimalist navigation menu.
-2. **Experience (Right Column)**: A vertical timeline (no boxes, just text aligned to a subtle vertical line to mimic Brittany Chiang's clean approach).
-3. **Projects (Right Column)**: 
-   - Not flat cards. We will use interactive, slightly elevated "rows" containing a small thumbnail on the left, and data (Title, Tech Stack Chips, **Business Impact**) on the right. 
-   - *Interaction*: Hovering a project row gently dims the other rows.
-4. **Skills (Right Column)**: Instead of a boring list, we'll use an irregular `display: flex; flex-wrap: wrap` cluster of pill-shaped MUI `<Chip>` components that fade in staggardly on scroll.
+### Section-by-Section "Story chapters"
+1. **Chapter 1: The Human (Hero Section)**:
+   - A massive, gorgeous typographic introduction. Who is Sunil? Not just a "Software Engineer, a meticulous problem listener, and a relentless problem solver (even when the solution is elusive)." This sets the tone that they are hiring a human, not just a coder.
+2. **Chapter 2: The Craft (Experience & Philosophy)**:
+   - Instead of a dry timeline, we weave your experience into a narrative. Short, punchy paragraphs about *how* you build things, accompanied by the timeline of where you've been.
+3. **Chapter 3: The Proof (Selected Works)**:
+   - Large, immersive project presentations. Not a grid of cards, but full-width sections for each major project, detailing the problem, the solution, and the human/business impact.
+4. **Chapter 4: The Dialogue (Contact)**:
+   - A warm, inviting footer. "Let's build something great together."
 
 ## 5. Asset & Animation Strategy
 - **Animations (Framer Motion)**:
-  - *Entrance*: Staggered fade-up (`y: 20, opacity: 0` to `y: 0, opacity: 1`) when sections enter the viewport.
+  - *The Ghost Nav*: `opacity: 0` to `opacity: 1` with a long transition (`duration: 0.8`) tied to scroll direction.
   - *Cursor*: A custom highly-subtle glow effect tracking the mouse (optional, must be performant).
 - **Assets Needed**:
   - We need valid `href` links for all projects.
   - If we use images, they must be formatted as `.webp` using Next.js `<Image>` component for instant loading (avoiding Adham's performance trap).
   - Icons: We will use `@mui/icons-material` for consistency and SVG performance.
 
-## 6. Fundamental Development Rules
+## 6. Narrative & Copywriting (The Story)
+*This section contains the actual text and themes we will use in the UI.*
+
+### The Origin (Draft)
+*Theme: Fascination, early exposure, and the drive for autonomy.*
+"It started with keypad phones and settings menus. When my family got our first smartphone, an entire new world opened up. By 10th grade, while others followed traditional paths, I chose a diploma in Computer Science. The goal wasn't just to write code—it was to build my own 'Jarvis'. To automate my life, to gain the wisdom and confidence to build anything I could imagine, and to reach a point where my only true concern is the health and longevity of my family."
+
+### The Philosophy & Superpower (Draft)
+*Theme: Embracing chaos, root-cause analysis, and extreme composure.*
+"When I see bad code—code that crashes, takes forever to load, or hemorrhages money—I don't get frustrated. I smile. Then I laugh. Chaos is just an opportunity to learn something new or contribute a fix. It makes you stronger. When things break and others panic, randomly pushing blame or overcomplicating the issue, I stay completely calm. Juniors ask me how. I tell them: 'None of the noise matters. Figure out the full story, find the exact reason it failed, and fix it.' Because every single time I've taken that approach, I've been right."
+
+### The Energy & the "Why Me" (Draft)
+*Theme: Unstoppable momentum, infectious positivity, and deep empathy.*
+"Tech skills can be taught, but energy is innate. When people start talking with me, the silence vanishes. There are no empty moments. I don't know if it's a specific skill, but I've noticed a pattern: every single person around me, even if they are depressed or angry, ends up with a happy smile. They feel heard, they feel comfortable, and they open up. You aren't just hiring a developer to write Next.js; you are hiring a person who will make your team smile through the hardest sprints."
+
+### Outside the Terminal
+*Theme: Strategy and Teamwork.*
+"When I'm not architecting web platforms, you can find me analyzing moves on a chessboard or spiking on the volleyball court. Both teach me the same lesson: whether it's a quiet strategic battle or high-energy teamwork, you have to read the room, anticipate the next move, and always play to win."
+
+## 7. Fundamental Development Rules
 To guarantee a "Best in Class" result that ranks above 95 on Lighthouse, we will adhere to these non-negotiable rules:
 
 - **Rule 1: Content Separation**: UI components must remain dumb. All text and data must flow from `dataset/portfolio_data.json` and `portfolio_extra.json`.

@@ -4,13 +4,14 @@ import CssBaseline from '@mui/material/CssBaseline';
 import theme from '@/theme';
 import './globals.scss';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Outfit } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
+const outfit = Outfit({ subsets: ['latin'], variable: '--font-outfit', display: 'swap' });
 
 export const metadata: Metadata = {
-  title: 'Sunil-Kumar-P | Portfolio',
-  description: 'Fullstack Engineer Portfolio',
+  title: 'Sunil Kumar | Product Engineer',
+  description: 'Software Engineer, a meticulous problem listener, and a relentless problem solver.',
 };
 
 export default function RootLayout({
@@ -20,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.variable}>
+      <body className={`${inter.variable} ${outfit.variable}`}>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             <CssBaseline />

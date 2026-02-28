@@ -1,20 +1,25 @@
 'use client';
+
 import React from 'react';
-import { Container, Typography, Box } from '@mui/material';
+import GhostNav from '@/components/ui/GhostNav';
+import HeroSection from '@/components/sections/HeroSection';
+import CraftSection from '@/components/sections/CraftSection';
+import ProofSection from '@/components/sections/ProofSection';
+import DialogueSection from '@/components/sections/DialogueSection';
+import portfolioData from '@/dataset/portfolio_data.json';
 
-const Home = () => {
+export default function Home() {
   return (
-    <Box sx={{ flexGrow: 1, minHeight: '100vh', bgcolor: 'background.default', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-      <Container maxWidth="sm">
-        <Typography variant="h4" component="h1" align="center" gutterBottom>
-          Portfolio Starting Point
-        </Typography>
-        <Typography variant="body1" align="center" color="text.secondary">
-          Material UI v6 and Sass are successfully configured.
-        </Typography>
-      </Container>
-    </Box>
+    <>
+      <GhostNav />
+      <main className="page-container">
+        <div className="story-column">
+          <HeroSection />
+          <CraftSection />
+          <ProofSection projects={portfolioData.projects} />
+          <DialogueSection />
+        </div>
+      </main>
+    </>
   );
-};
-
-export default Home;
+}
