@@ -1,34 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Sunil Kumar P - Next.js Portfolio
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. This project showcases the professional profile, skills, and achievements of Sunil Kumar P.
 
-First, run the development server:
+## 🚀 Tech Stack
+
+- **Framework**: [Next.js 13](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **UI Components**: [Radix UI](https://www.radix-ui.com/)
+
+## ✨ Key Features
+
+- **About Me**: Professional summary and personal details.
+- **Education**: Detailed academic background.
+- **Skills**: Technical and soft skills overview.
+- **Projects**: Portfolio of completed work.
+- **Experience**: Internships and professional growth.
+- **Achievements**: Awards and co-curricular activities.
+
+## 🛠️ Getting Started
+
+First, install the dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- `app/`: Next.js App Router pages and global styles.
+- `components/`: Reusable UI components (About, Projects, Skills, etc.).
+- `components/ui/`: Radix-based low-level UI components.
+- `public/`: Static assets like images and icons.
+- `lib/`: Utility functions and shared logic.
 
-## Learn More
+## 📧 Contact
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Github**: [Sunil-Kumar-P](https://github.com/Sunil-Kumar-P)
+- **Email**: [Add Your Email Here]
+- **Mobile**: [Add Your Mobile Number Here]
+- **Address**: #95/A, 2nd Main, 2nd Cross, Near Aaxis Hospital, Belthur, Kadugodi Post, Bengaluru-560067

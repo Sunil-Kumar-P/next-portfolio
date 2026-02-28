@@ -1,0 +1,14 @@
+/* Basic reset for new architecture */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.profile-image {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #333;
+}
